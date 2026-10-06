@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Түүхийн сайт - Жил бүрийн мэдээ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Түүхийн Сайт</h1>
+            <p class="subtitle">Жил оруулна уу, тухайн үеийн мэдээг үз</p>
+        </header>
+
+        <div class="search-section">
+            <input 
+                type="number" 
+                id="yearInput" 
+                placeholder="Жил оруулна уу (жишээ: 1915)" 
+                min="1000" 
+                max="2025"
+            >
+            <button onclick="searchYear()">🔍 Хайх</button>
+        </div>
+
+        <div id="result" class="result-section"></div>
+
+        <div class="info-section">
+            <h3>Сайтын хүрээ</h3>
+            <p>Дэлхийн түүхийн чухал үйл явдлуудыг он бүрд хуваагласан мэдээг өгүүлжээ.</p>
+            <p><small>Энэ өгөгдлүүд нь түүхийн сурах бичиг болон нээлттэй эх сурвалжаас цуглуулсан.</small></p>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
